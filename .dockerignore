@@ -1,0 +1,6 @@
+.git
+.github
+.nojekyll
+README.md
+Dockerfile*
+docker-compose*

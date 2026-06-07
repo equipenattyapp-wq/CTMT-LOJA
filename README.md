@@ -8,6 +8,22 @@ O fundo animado atual está em `assets/hero-ctmt.gif`. Para trocar a animação,
 substitua o arquivo mantendo o mesmo nome ou atualize o caminho no elemento
 `.hero-media` de `index.html`.
 
+## Docker
+
+Crie a imagem:
+
+```bash
+docker build -t ctmt-loja .
+```
+
+Execute o container:
+
+```bash
+docker run --rm -p 8080:80 ctmt-loja
+```
+
+O site ficará disponível em `http://localhost:8080`.
+
 ## WhatsApp oficial
 
 Em `script.js`, localize:
