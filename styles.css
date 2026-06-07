@@ -231,7 +231,11 @@ svg {
   inset: 0;
 }
 
-.hero-media img {
+.hero-media {
+  background: var(--black) url("assets/hero-ctmt-poster.jpg") center / cover no-repeat;
+}
+
+.hero-media video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1696,7 +1700,7 @@ svg {
     min-height: 780px;
   }
 
-  .hero-media img {
+  .hero-media video {
     object-position: center;
   }
 
@@ -1817,6 +1821,10 @@ svg {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero-media video {
+    display: none;
+  }
+
   *,
   *::before,
   *::after {

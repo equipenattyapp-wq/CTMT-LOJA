@@ -4,9 +4,9 @@ Site estático em HTML, CSS e JavaScript. Abra `index.html` ou publique a pasta 
 
 ## Mídia da hero
 
-O fundo animado atual está em `assets/hero-ctmt.gif`. Para trocar a animação,
-substitua o arquivo mantendo o mesmo nome ou atualize o caminho no elemento
-`.hero-media` de `index.html`.
+O fundo animado atual usa `assets/hero-ctmt.mp4`, com
+`assets/hero-ctmt-poster.jpg` como capa e fallback. O MP4 substitui o GIF para
+reduzir o consumo de memória e processamento, especialmente em Android.
 
 ## Docker
 
