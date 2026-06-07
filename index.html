@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loja oficial do CTMT Boxe. Equipamentos de boxe selecionados por quem vive o ringue, com retirada presencial na academia.">
+  <meta name="theme-color" content="#0f090a">
+  <title>CTMT Boxe | Equipamentos para quem luta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <defs>
+      <symbol id="icon-gloves" viewBox="0 0 240 220">
+        <path d="M60 171c-12-11-19-30-16-46 3-13 9-17 4-30-7-19 1-43 19-55 17-12 42-10 56 5 12 13 13 33 3 47l-8 10 33 35-45 45-18-17-14 12z" fill="currentColor"/>
+        <path d="M124 71c13-16 33-22 50-13 22 11 30 39 18 60-6 10-16 16-27 19l-33-35c6-9 6-20-1-29z" fill="currentColor" opacity=".82"/>
+        <path d="m91 157 35-36 29 29-38 39z" fill="#0f090a" opacity=".3"/>
+        <path d="M53 113c16 2 30 13 35 28" fill="none" stroke="#f1efef" stroke-width="6" stroke-linecap="round" opacity=".3"/>
+      </symbol>
+      <symbol id="icon-wraps" viewBox="0 0 240 220">
+        <path d="M86 65c29-21 80-13 92 22 12 37-22 75-61 75-37 0-68-32-55-65 5-13 14-24 24-32z" fill="none" stroke="currentColor" stroke-width="24"/>
+        <path d="M111 82c18-9 43 0 47 18 4 20-16 40-36 38-20-2-34-21-27-38 3-8 9-14 16-18z" fill="none" stroke="currentColor" stroke-width="16" opacity=".7"/>
+        <path d="M151 151 196 191" stroke="currentColor" stroke-width="20" stroke-linecap="round"/>
+        <path d="M184 178h27v26h-27z" fill="currentColor" rx="5"/>
+      </symbol>
+      <symbol id="icon-headgear" viewBox="0 0 240 220">
+        <path d="M71 63c18-31 81-36 106-5 17 22 18 68 3 99-7 14-20 26-35 33l-12-35c19-8 29-27 26-48-3-21-17-34-38-34s-38 17-39 39c0 21 11 36 29 44l-11 34c-23-8-40-26-47-50-8-29-2-59 18-77z" fill="currentColor"/>
+        <path d="M82 89h34v29H79M159 89h-27v29h30" fill="none" stroke="#0f090a" stroke-width="10"/>
+        <path d="M101 156c11 6 24 6 34 0" fill="none" stroke="#f1efef" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+      </symbol>
+      <symbol id="icon-mouthguard" viewBox="0 0 240 220">
+        <path d="M44 103c10-46 48-72 76-72s66 26 76 72c5 22-4 55-26 70-15 10-33 6-50 6s-35 4-50-6c-22-15-31-48-26-70z" fill="currentColor"/>
+        <path d="M67 108c16-25 34-35 53-35s37 10 53 35c-16 17-34 25-53 25s-37-8-53-25z" fill="#0f090a" opacity=".55"/>
+        <path d="M73 147c30 14 64 14 94 0" fill="none" stroke="#f1efef" stroke-width="6" stroke-linecap="round" opacity=".35"/>
+      </symbol>
+      <symbol id="icon-bag" viewBox="0 0 240 220">
+        <path d="M88 21h64l-6 32H94z" fill="currentColor" opacity=".75"/>
+        <path d="M83 48h74c12 30 17 83 9 128-5 25-20 36-46 36s-41-11-46-36c-8-45-3-98 9-128z" fill="currentColor"/>
+        <path d="M80 99h80M75 165h90" stroke="#0f090a" stroke-width="9" opacity=".34"/>
+        <path d="M99 18 82 2M141 18l17-16" stroke="currentColor" stroke-width="6"/>
+      </symbol>
+      <symbol id="icon-shirt" viewBox="0 0 240 220">
+        <path d="m78 31 42 14 42-14 50 39-29 40-21-14v111H78V96l-21 14-29-40z" fill="currentColor"/>
+        <path d="M94 36c3 19 12 29 26 29s23-10 26-29" fill="#0f090a" opacity=".45"/>
+        <path d="M97 105h46v37H97z" fill="#d9211b"/>
+        <text x="120" y="132" fill="#f1efef" font-family="Arial Black,Arial,sans-serif" font-size="20" text-anchor="middle">CTMT</text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a class="brand" href="#topo" aria-label="CTMT Boxe, início">
+        <img src="assets/logo-ctmt.svg" alt="Logo CTMT Boxe">
+        <span class="brand-word">
+          <strong>CTMT</strong>
+          <small>BOXE STORE</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#produtos">Equipamentos</a>
+        <a href="#como-comprar">Como comprar</a>
+        <a href="#retirada">Retirada no CT</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+        <button class="cart-button" type="button" data-open-cart>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7M10 20h.01M17 20h.01"/></svg>
+          <span class="cart-label">Meu pedido</span>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Navegação móvel">
+      <a href="#produtos">Equipamentos</a>
+      <a href="#como-comprar">Como comprar</a>
+      <a href="#retirada">Retirada no CT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="assets/hero-ctmt.gif" alt="" aria-hidden="true">
+      </div>
+      <div class="hero-noise"></div>
+      <div class="hero-lines"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span></span>
+          Loja oficial CTMT
+        </div>
+        <h1 id="hero-title">Equipamento<br>não ganha luta.<br><em>Mas prepara.</em></h1>
+        <p>Produtos escolhidos por quem vive o ringue. Monte seu kit, envie o pedido no WhatsApp e retire direto no CT.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#produtos">
+            Ver equipamentos
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="button button-ghost" href="#como-comprar">Como funciona</a>
+        </div>
+      </div>
+
+      <aside class="hero-pickup">
+        <div class="pickup-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5 7-12a7 7 0 1 0-14 0c0 7 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div><small>Retirada exclusiva</small><strong>Direto no CTMT</strong></div>
+      </aside>
+
+      <a class="scroll-cue" href="#beneficios" aria-label="Rolar para a próxima seção">
+        <span>Role para explorar</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="benefit-strip" id="beneficios" aria-label="Benefícios da loja">
+      <div class="benefit">
+        <span>01</span>
+        <div><strong>Curadoria de lutador</strong><small>Só o que funciona no treino</small></div>
+      </div>
+      <div class="benefit">
+        <span>02</span>
+        <div><strong>Pedido sem complicação</strong><small>Finalize direto no WhatsApp</small></div>
+      </div>
+      <div class="benefit">
+        <span>03</span>
+        <div><strong>Retirada na academia</strong><small>Sem frete, sem espera em casa</small></div>
+      </div>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Loja CTMT</span>
+          <h2>Escolha suas <em>armas.</em></h2>
+        </div>
+        <p>Equipamentos essenciais para começar, evoluir e treinar com mais segurança.</p>
+      </div>
+
+      <div class="product-toolbar">
+        <div class="filters" role="group" aria-label="Filtrar produtos">
+          <button class="filter-button is-active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-button" type="button" data-filter="luvas">Luvas</button>
+          <button class="filter-button" type="button" data-filter="protecao">Proteção</button>
+          <button class="filter-button" type="button" data-filter="acessorios">Acessórios</button>
+          <button class="filter-button" type="button" data-filter="vestuario">Vestuário</button>
+        </div>
+        <span class="product-total"><strong data-visible-count>8</strong> produtos</span>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card featured" data-category="luvas">
+          <div class="product-visual red">
+            <span class="product-badge">Mais vendida</span>
+            <span class="visual-number">01</span>
+            <svg class="product-icon" viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-gloves"/></svg>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Luvas</span><span>12 / 14 / 16 oz</span></div>
+            <h3>Luva CTMT Training Pro</h3>
+            <p>Proteção firme, ajuste seguro e conforto para rounds intensos.</p>
+            <div class="product-buy">
+              <div class="price"><small>R$</small> 289<sup>,90</sup></div>
+              <button class="add-button" type="button" data-add-product data-id="luva-training-pro" data-name="Luva CTMT Training Pro" data-price="289.90" aria-label="Adicionar Luva CTMT Training Pro">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="luvas">
+          <div class="product-visual graphite">
+            <span class="visual-number">02</span>
+            <svg class="product-icon" viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-gloves"/></svg>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Luvas</span><span>10 / 12 oz</span></div>
+            <h3>Luva Speed Black</h3>
+            <p>Leve e responsiva para manopla, saco e treinos de velocidade.</p>
+            <div class="product-buy">
+              <div class="price"><small>R$</small> 239<sup>,90</sup></div>
+              <button class="add-button" type="button" data-add-product data-id="luva-speed-black" data-name="Luva Speed Black" data-price="239.90" aria-label="Adicionar Luva Speed Black">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="acessorios">
+          <div class="product-visual light">
+            <span class="product-badge dark">Essencial</span>
+            <span class="visual-number">03</span>
+            <svg class="product-icon" viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-wraps"/></svg>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Acessórios</span><span>4,5 metros</span></div>
+            <h3>Bandagem CTMT 4,5m</h3>
+            <p>Algodão elástico, polegar reforçado e fechamento em velcro.</p>
+            <div class="product-buy">
+              <div class="price"><small>R$</small> 49<sup>,90</sup></div>
+              <button class="add-button" type="button" data-add-product data-id="bandagem-ctmt" data-name="Bandagem CTMT 4,5m" data-price="49.90" aria-label="Adicionar Bandagem CTMT 4,5m">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="protecao">
+          <div class="product-visual dark-red">
+            <span class="visual-number">04</span>
+            <svg class="product-icon" viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-headgear"/></svg>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Proteção</span><span>P / M / G</span></div>
+            <h3>Capacete Sparring Guard</h3>
+            <p>Campo de visão aberto com proteção reforçada nas têmporas.</p>
+            <div class="product-buy">
+              <div class="price"><small>R$</small> 319<sup>,90</sup></div>
+              <button class="add-button" type="button" data-add-product data-id="capacete-sparring" data-name="Capacete Sparring Guard" data-price="319.90" aria-label="Adicionar Capacete Sparring Guard">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="protecao">
+          <div class="product-visual silver">
+            <span class="visual-number">05</span>
+            <svg class="product-icon" viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-mouthguard"/></svg>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Proteção</span><span>Adulto</span></div>
+            <h3>Protetor Bucal Impact</h3>
+            <p>Encaixe moldável e canal de respiração para máxima segurança.</p>
+            <div class="product-buy">
+              <div class="price"><small>R$</small> 69<sup>,90</sup></div>
+              <button class="add-button" type="button" data-add-product data-id="protetor-bucal" data-name="Protetor Bucal Impact" data-price="69.90" aria-label="Adicionar Protetor Bucal Impact">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="acessorios">
+          <div class="product-visual graphite">
+            <span class="visual-number">06</span>
+            <svg class="product-icon" viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-bag"/></svg>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Acessórios</span><span>90 cm</span></div>
+            <h3>Saco de Pancada Heavy</h3>
+            <p>Revestimento resistente e densidade equilibrada para o treino diário.</p>
+            <div class="product-buy">
+              <div class="price"><small>R$</small> 449<sup>,90</sup></div>
+              <button class="add-button" type="button" data-add-product data-id="saco-heavy" data-name="Saco de Pancada Heavy" data-price="449.90" aria-label="Adicionar Saco de Pancada Heavy">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="vestuario">
+          <div class="product-visual light">
+            <span class="visual-number">07</span>
+            <svg class="product-icon" viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-shirt"/></svg>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Vestuário</span><span>P ao GG</span></div>
+            <h3>Camiseta CTMT Fight Club</h3>
+            <p>Malha premium de toque seco para representar o CT dentro e fora do treino.</p>
+            <div class="product-buy">
+              <div class="price"><small>R$</small> 89<sup>,90</sup></div>
+              <button class="add-button" type="button" data-add-product data-id="camiseta-fight-club" data-name="Camiseta CTMT Fight Club" data-price="89.90" aria-label="Adicionar Camiseta CTMT Fight Club">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="vestuario">
+          <div class="product-visual red">
+            <span class="visual-number">08</span>
+            <svg class="product-icon" viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-shirt"/></svg>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Vestuário</span><span>P ao GG</span></div>
+            <h3>Regata CTMT Performance</h3>
+            <p>Tecido respirável e corte livre para movimentação sem distrações.</p>
+            <div class="product-buy">
+              <div class="price"><small>R$</small> 79<sup>,90</sup></div>
+              <button class="add-button" type="button" data-add-product data-id="regata-performance" data-name="Regata CTMT Performance" data-price="79.90" aria-label="Adicionar Regata CTMT Performance">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="kit-banner">
+      <div class="kit-graphic" aria-hidden="true">
+        <span class="kit-ring ring-one"></span>
+        <span class="kit-ring ring-two"></span>
+        <svg viewBox="0 0 240 220"><use href="#icon-gloves"/></svg>
+      </div>
+      <div class="kit-copy">
+        <span class="section-kicker light-kicker">Comece do jeito certo</span>
+        <h2>Seu primeiro round<br>começa com o <em>kit certo.</em></h2>
+        <p>Luva Training Pro + bandagem 4,5 m + protetor bucal. O essencial para entrar no treino com segurança.</p>
+        <div class="kit-price"><span>Kit completo por</span><strong>R$ 379,70</strong></div>
+        <button class="button button-light" type="button" data-add-kit>
+          Adicionar kit ao pedido
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="process-section" id="como-comprar">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Sem burocracia</span>
+          <h2>Do clique ao <em>treino.</em></h2>
+        </div>
+        <p>Você escolhe online e resolve tudo com uma conversa rápida no WhatsApp.</p>
+      </div>
+      <div class="process-grid">
+        <article>
+          <span class="step-number">01</span>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7M10 20h.01M17 20h.01"/></svg>
+          </div>
+          <h3>Monte seu pedido</h3>
+          <p>Escolha os produtos e quantidades que fazem sentido para o seu treino.</p>
+        </article>
+        <article>
+          <span class="step-number">02</span>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8.2 8.2 0 0 1-8.5 8.2 9 9 0 0 1-3.8-.9L3 20l1.3-4.5a8 8 0 1 1 15.7-4Z"/><path d="M8.5 8.4c.4 2 2 3.7 4.1 4.4l1.1-1c.3-.3.7-.3 1-.1l1.6.8"/></svg>
+          </div>
+          <h3>Confirme no WhatsApp</h3>
+          <p>O resumo vai pronto. A equipe confirma estoque, tamanho e forma de pagamento.</p>
+        </article>
+        <article>
+          <span class="step-number">03</span>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5 7-12a7 7 0 1 0-14 0c0 7 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <h3>Retire no CTMT</h3>
+          <p>Seu equipamento fica separado para retirada presencial direto na academia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pickup-section" id="retirada">
+      <div class="pickup-photo">
+        <img src="assets/hero-boxing.png" alt="Atleta treinando boxe no CTMT">
+        <span>CTMT / BOXE</span>
+      </div>
+      <div class="pickup-copy">
+        <span class="section-kicker">Nossa casa. Seu ponto de retirada.</span>
+        <h2>Treine. Equipe-se.<br><em>Evolua.</em></h2>
+        <p>Retire suas compras durante o horário de funcionamento do CT. Nossa equipe também pode ajudar você a escolher tamanho, peso e ajuste antes de levar.</p>
+        <div class="location-card">
+          <div class="location-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5 7-12a7 7 0 1 0-14 0c0 7 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <div><small>Retirada presencial</small><strong>CTMT Boxe</strong><span>Confirme endereço e horário pelo WhatsApp</span></div>
+        </div>
+        <a class="text-link" href="https://wa.me/?text=Olá%20CTMT!%20Quero%20saber%20o%20endereço%20e%20os%20horários%20para%20retirada." target="_blank" rel="noopener">
+          Falar com a equipe
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div>
+        <span>Ainda em dúvida?</span>
+        <h2>Fale com quem entende<br>de <em>boxe.</em></h2>
+      </div>
+      <a class="button button-primary" href="https://wa.me/?text=Olá%20CTMT!%20Preciso%20de%20ajuda%20para%20escolher%20meu%20equipamento." target="_blank" rel="noopener">
+        Chamar no WhatsApp
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="assets/logo-ctmt.svg" alt="">
+        <div><strong>CTMT</strong><span>BOXE STORE</span></div>
+      </div>
+      <p>Equipamentos escolhidos por quem vive o ringue. Pedido online, atendimento humano e retirada no CT.</p>
+      <div class="footer-nav">
+        <a href="#produtos">Equipamentos</a>
+        <a href="#como-comprar">Como comprar</a>
+        <a href="#retirada">Retirada no CT</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> CTMT Boxe. Todos os direitos reservados.</span>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" aria-label="Seu pedido" aria-hidden="true" data-cart-drawer>
+    <div class="cart-header">
+      <div>
+        <span>Seu pedido</span>
+        <h2>Pronto para o ringue?</h2>
+      </div>
+      <button class="close-cart" type="button" aria-label="Fechar pedido" data-close-cart>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-empty" data-cart-empty>
+      <div class="empty-icon">
+        <svg viewBox="0 0 240 220" aria-hidden="true"><use href="#icon-gloves"/></svg>
+      </div>
+      <h3>Seu pedido está vazio</h3>
+      <p>Escolha seus equipamentos e eles aparecem aqui.</p>
+      <button class="button button-dark" type="button" data-close-cart>Ver equipamentos</button>
+    </div>
+    <div class="cart-summary" data-cart-summary>
+      <div class="summary-row"><span>Subtotal</span><strong data-cart-subtotal>R$ 0,00</strong></div>
+      <div class="summary-row pickup-row"><span>Entrega</span><strong>Retirada no CT</strong></div>
+      <p>Estoque, tamanhos e pagamento serão confirmados pela equipe.</p>
+      <button class="whatsapp-checkout" type="button" data-checkout>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8.2 8.2 0 0 1-8.5 8.2 9 9 0 0 1-3.8-.9L3 20l1.3-4.5a8 8 0 1 1 15.7-4Z"/><path d="M8.5 8.4c.4 2 2 3.7 4.1 4.4l1.1-1c.3-.3.7-.3 1-.1l1.6.8"/></svg>
+        Finalizar no WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>
+    <span class="toast-check">✓</span>
+    <span data-toast-message>Produto adicionado ao pedido</span>
+  </div>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
